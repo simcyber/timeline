@@ -27,29 +27,62 @@
 </head>
 
 <body>
-<!-- todo: Use Affix.js -->
+
+<div data-spy="affix" data-offset-top="160" data-offset-bottom="50" class="time-line">
+    <ul class="nav">
+        <li><a href="#li1">1989</a></li>
+        <li><a href="#li2">1995</a></li>
+        <li><a href="#li3">2001</a></li>
+        <li><a href="#li4">2010</a></li>
+    </ul>
+</div>
+<!-- todo: make a cover like google io 2014 -->
 <div class="container-fluid">
 
+    <div id="li1"></div>
     <div class="row">
-        <div class="col-md-12">Our Story</div>
+        <div class="col-md-12">The First Li</div>
     </div>
 
     <div class="row">
-        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">First content</div>
         <div class="col-md-6">.col-md-6</div>
     </div>
 
+    <div id="li2"></div>
     <div class="row">
-        <div class="col-md-5">.col-md-5</div>
+        <div class="col-md-5">Second Li</div>
         <div class="col-md-7">.col-md-7</div>
     </div>
 
     <div class="row">
-        <div class="col-md-7">.col-md-7</div>
+        <div class="col-md-6">Second content</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
+
+    <div id="li3"></div>
+    <div class="row">
+        <div class="col-md-7">Third Li</div>
         <div class="col-md-5">.col-md-5</div>
     </div>
 
-</div> <!-- /container -->
+    <div class="row">
+        <div class="col-md-6">Third Li content</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
+
+    <div id="li4"></div>
+    <div class="row">
+        <div class="col-md-7">Fourth Li</div>
+        <div class="col-md-5">.col-md-5</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">Fourth Li content</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
+</div>
+<!-- /container -->
 
 
 <!-- Bootstrap core JavaScript
@@ -57,5 +90,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script>$('body').scrollspy({ target: '.time-line' })</script>
 </body>
 </html>

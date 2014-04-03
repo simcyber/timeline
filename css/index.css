@@ -31,3 +31,18 @@ hr {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+.time-line {
+    font-size: 14px;
+    line-height: 1.42857;
+}
+.affix-top {
+    position: absolute;
+    top: 150px;
+}
+.affix {
+    top: 50px;
+}
+.active > a {
+    color: #000;
+}
