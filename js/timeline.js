@@ -1,6 +1,3 @@
-/**
- * Created by August on 14-4-11.
- */
 $(document).ready(function(){
     var my_posts = $("[rel=tooltip]");
 
