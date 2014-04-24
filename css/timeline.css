@@ -144,7 +144,6 @@
 .tooltip.in{
     /*opacity:0;
     filter:alpha(opacity=80);*/
-
 }
 .tooltip.top{
     margin-top:-2px;
@@ -219,6 +218,9 @@
     left: -12px;
 }
 
+/*
+ * Tablets
+ */
 @media (max-width: 767px) {
     ul.timeline:before {
         left: 40px;
@@ -270,5 +272,14 @@
 
     .timeline > li.timeline-inverted > .timeline-badge{
         left: 28px;
+    }
+}
+
+/*
+ * Phones
+ */
+@media (max-width: 500px) {
+    ul.timeline:before {
+        left: 60px;
     }
 }
