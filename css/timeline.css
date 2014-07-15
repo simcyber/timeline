@@ -279,7 +279,13 @@
  * Phones
  */
 @media (max-width: 500px) {
-    ul.timeline:before {
-        left: 60px;
+    ul.timeline > li > .timeline-panel {
+        width: inherit;
+    }
+    .timeline:before {
+        top: inherit;
+    }
+    .timeline-icon {
+        display: none;
     }
 }
