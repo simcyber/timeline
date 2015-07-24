@@ -26,7 +26,13 @@ var vm = avalon.define({
                     d = new Date(data[i].fields.create_time);
                     data[i].fields.create_time = d.getFullYear() + "-" +
                         (parseInt(d.getMonth()) + 1).toString() + "-" +
-                        d.getDate() + " " + d.getHours() + ":" + d.getMinutes();
+                        d.getDate() + " " + d.getHours() + ":";
+                    if(d.getMinutes() < 10){
+                        data[i].fields.create_time += "0" + d.getMinutes();
+                    }
+                    else{
+                        data[i].fields.create_time += d.getMinutes();
+                    }
                     vm.items.push(data[i]);
                 }
                 vm.page++;
