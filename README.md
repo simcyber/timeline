@@ -6,3 +6,6 @@ A bootstrap template based on [Timeline 2.1 of bootsnipp](http://bootsnipp.com/s
 ###Feature
 * Responsible
 * Django backend and admin
+
+###Demo
+http://doplan.me/
