@@ -14,7 +14,7 @@ def timeline_data(request):
     except ValueError:
         page = 1
     try:
-        items = Paginator(TimelineItem.objects.all(), 6).page(page)
+        items = Paginator(TimelineItem.objects.all().order_by("-create_time"), 6).page(page)
     except Exception:
         items = []
     response = HttpResponse(serializers.serialize("json", items), content_type="application/json")

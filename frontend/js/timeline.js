@@ -17,7 +17,7 @@ var vm = avalon.define({
                 }
                 for (var i = 0; i < data.length; i++) {
 
-                    if (data[i].pk % 2) {
+                    if (data[i].pk % 2 == 0) {
                         data[i]._class = "timeline-inverted";
                     }
                     else {
