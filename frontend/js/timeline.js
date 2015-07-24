@@ -6,7 +6,7 @@ var vm = avalon.define({
     page: 1,
     load: function () {
         $.ajax({
-            url: "http://127.0.0.1:8000/data/?page=" + vm.page.toString(),
+            url: "/data/?page=" + vm.page.toString(),
             method: "get",
             dataType: "json",
             success: function (data) {
@@ -60,14 +60,11 @@ var vm = avalon.define({
 vm.load();
 var m = -1;
 $(window).scroll(function () {
-
     var l = $(this).scrollTop();
-    //当内容滚动到底部时加载新的内容
     if (l > m) {
         m = $(this).scrollTop();
     }
     if (l + $(window).height() + 20 >= $(document).height() && l > 20 && l >= m) {
-        //当前要加载的页码
         vm.load();
     }
 });
