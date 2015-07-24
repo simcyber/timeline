@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>virusdefenders' timeline</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script>alert("本站不支持低版本的 IE 浏览器!");</script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="container" ms-controller="timeline">
+    <div class="page-header text-center">
+        <h1>virusdefenders' timeline</h1>
+    </div>
+    <ul class="timeline">
+        <li ms-repeat-item="vm.items" ms-class="{{item._class}}">
+            <div class="timeline-badge primary"><a class="timeline-icon">
+                <i class="glyphicon glyphicon-record" rel="tooltip" ms-attr-title="{{item.fields.create_time}}">
+
+                </i>
+            </a>
+            </div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h3 ms-text="item.fields.title"></h3>
+
+                </div>
+                <div class="timeline-body">
+                    <p ms-html="item.fields.content">
+                    </p>
+                </div>
+            </div>
+        </li>
+
+        <li class="clearfix" style="float: none;"></li>
+    </ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/avalon.js"></script>
+<script src="js/timeline.js"></script>
+</body>
+</html>

@@ -36,6 +36,10 @@
 .timeline > li:after {
     clear: both;
 }
+
+.timeline-heading{
+    padding-left: 20px;
+}
 .timeline > li > .timeline-panel {
     width: 95%;
     float: left;
@@ -211,6 +215,14 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.timeline > li.timeline-left{
+    float: left;
+    clear: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .timeline > li:nth-child(2){
     margin-top: 60px;
 }
